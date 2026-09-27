@@ -94,9 +94,16 @@ export async function requestRide(req: AuthenticatedRequest, res: Response): Pro
         poolId = updatedPool.id;
         matchedVehicle = matchingPool.vehicle;
       } else {
-        // Find available online vehicle to create a new pool
+        // Find available online vehicle to create a new pool (must not have an active pool in progress)
         const availableVehicle = await tx.vehicle.findFirst({
-          where: { isOnline: true },
+          where: {
+            isOnline: true,
+            pools: {
+              none: {
+                status: { in: ['OPEN', 'FULL', 'IN_PROGRESS'] },
+              },
+            },
+          },
           include: { driver: true },
         });
 
