@@ -2,17 +2,20 @@
 
 > **Share a seat. Split the fare. Survive Dhaka traffic.**
 
-A full-stack, enterprise-grade EV ride-pooling MVP built for Dhaka traffic, engineered around the **Banani Rush-Hour Story** (Jashim & Bullet, Nusrat, Rafiq, Shirin).
+A full-stack, enterprise-grade EV ride-pooling web application built for Dhaka traffic, engineered around the **Banani Rush-Hour Story** (Jashim & Bullet, Nusrat, Rafiq, Shirin).
 
 ---
 
-## 📹 Project Walkthrough Video
+## 🌐 Live Production Deployment & Repository
 
-- **6-Minute Walkthrough Video Link**: `[Insert Loom / YouTube / Google Drive Demo Video Link]`
-- **Video Agenda**:
-  - `0:00–1:00`: Problem, Dhaka urban transit challenge, story cast & core idea.
-  - `1:00–3:00`: Architecture breakdown, Express TS backend, Next.js 14 frontend, database ERD, state machine, fare engine, and concurrency trade-offs.
-  - `3:00–6:00`: Live product tour (Nusrat & Rafiq passenger booking, Jashim driver cockpit, seat capacity visualizer, race condition simulation & deployment).
+- 🟢 **Live Deployed Web Application**: **[https://dhaka-tesla-pool-yvnn.vercel.app](https://dhaka-tesla-pool-yvnn.vercel.app)**
+- 📦 **Public GitHub Repository**: **[https://github.com/Abhi0833-eng/dhaka-tesla-pool](https://github.com/Abhi0833-eng/dhaka-tesla-pool)**
+- 📹 **6-Minute Walkthrough Video**: `[Insert Loom / YouTube / Google Drive Demo Video Link]`
+
+### Video Agenda Breakdown:
+- `0:00–1:00`: Problem, Dhaka urban transit challenge, story cast & core idea.
+- `1:00–3:00`: Architecture breakdown, Express TS backend, Next.js 14 frontend, database ERD, state machine, fare engine, and concurrency trade-offs.
+- `3:00–6:00`: Live product tour (Nusrat & Rafiq passenger booking, Jashim driver cockpit, seat capacity visualizer, race condition simulation & deployment).
 
 ---
 
@@ -203,7 +206,7 @@ const result = await prisma.$transaction(async (tx) => {
 
 ### 1. Clone Repository & Install Dependencies
 ```bash
-git clone https://github.com/abhis/dhaka-tesla-pool.git
+git clone https://github.com/Abhi0833-eng/dhaka-tesla-pool.git
 cd dhaka-tesla-pool
 
 # Install root, backend, and frontend packages
@@ -309,7 +312,7 @@ This repository strictly enforces the Git branching workflow mandated by RoBenDe
 - `master`: Production-ready integrated code.
 - `pre-release`: Integration validation, docs, and release candidate checks.
 - `release/v1.0.0`: Tagged release branch.
-- Feature branches (`feature/project-init`, `feature/backend-schema-db`, `feature/backend-core-apis`, `feature/backend-tests`, `feature/frontend-ui`, `feature/docker-setup`).
+- Feature branches (`feature/project-init`, `feature/backend-schema-db`, `feature/backend-core-apis`, `feature/backend-tests`, `feature/frontend-ui`, `feature/docker-setup`, `feature/vercel-deployment`).
 
 All commits follow the **Conventional Commits** specification: `<type>(<scope>): <short description>`.
 
