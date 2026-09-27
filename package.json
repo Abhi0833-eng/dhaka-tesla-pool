@@ -1,0 +1,25 @@
+{
+  "name": "dhaka-tesla-pool",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dhaka Tesla Pool - Share a seat. Split the fare. Survive Dhaka traffic.",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "test:backend": "npm --prefix backend test",
+    "db:seed": "npm --prefix backend run db:seed"
+  },
+  "keywords": [
+    "ride-sharing",
+    "tesla-pool",
+    "dhaka",
+    "nextjs",
+    "express",
+    "prisma",
+    "typescript"
+  ],
+  "author": "Abhishek Gupta",
+  "license": "MIT"
+}
